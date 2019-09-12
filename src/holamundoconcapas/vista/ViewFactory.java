@@ -11,8 +11,12 @@ package holamundoconcapas.vista;
  */
 
 public class ViewFactory {
-    private View viewF;
-    public View getView(){
+    private static View viewF;
+    
+    public static View getView(){
+        if(viewF==null){
+            viewF = new ViewImplementation();
+        }
         return viewF;
     }
 }

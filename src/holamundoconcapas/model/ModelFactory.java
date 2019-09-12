@@ -10,10 +10,12 @@ package holamundoconcapas.model;
  * @author 2dam
  */
 public class ModelFactory {
-    private Model modelF;
+    private static Model modelF;
     
-    public Model getModel(){
-        
+    public static Model getModel(){
+        if(modelF == null) {
+            modelF = new ModelImplementation();
+        }
         return modelF;
     }
 }

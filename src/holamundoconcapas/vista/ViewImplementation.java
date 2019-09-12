@@ -12,8 +12,10 @@ package holamundoconcapas.vista;
 public class ViewImplementation implements View {
 
     
-    public void showGreeting(String saludo) {
+    public void showGreeting(String saludo) throws Exception {
+        
         System.out.println(saludo);
+        
     }
     
 }

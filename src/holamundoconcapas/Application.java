@@ -5,10 +5,24 @@
  */
 package holamundoconcapas;
 
+import holamundoconcapas.controller.Controller;
+import holamundoconcapas.model.Model;
+import holamundoconcapas.model.ModelFactory;
+import holamundoconcapas.vista.View;
+import holamundoconcapas.vista.ViewFactory;
+
 /**
  *
  * @author 2dam
  */
 public class Application {
     
+        public static void main(String [] args) throws Exception {
+            Model model = ModelFactory.getModel();
+            View view = ViewFactory.getView();
+            
+            Controller con = new Controller();
+            con.run(model, view);
+            
+        }
 }

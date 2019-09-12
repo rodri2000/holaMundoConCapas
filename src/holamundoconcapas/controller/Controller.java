@@ -5,6 +5,8 @@
  */
 package holamundoconcapas.controller;
 
+import holamundoconcapas.model.Model;
+import holamundoconcapas.model.ModelFactory;
 import holamundoconcapas.vista.View;
 
 /**
@@ -13,6 +15,11 @@ import holamundoconcapas.vista.View;
  */
 public class Controller{
     
-    
+    public static void run(Model model, View view) throws Exception{
+        
+        view.showGreeting(model.getGretting());
+        
+        
+    }
     
 }

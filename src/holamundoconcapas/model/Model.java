@@ -10,6 +10,6 @@ package holamundoconcapas.model;
  * @author 2dam
  */
 public interface Model {
-    public String getGretting();
+    public String getGretting() throws Exception;
     
 }

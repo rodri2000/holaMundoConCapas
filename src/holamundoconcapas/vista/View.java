@@ -10,6 +10,6 @@ package holamundoconcapas.vista;
  * @author 2dam
  */
 public interface View {
-    public void showGreeting(String saludo);
+    public void showGreeting(String saludo) throws Exception;
     
 }

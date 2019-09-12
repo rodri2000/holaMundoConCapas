@@ -12,9 +12,11 @@ package holamundoconcapas.model;
 public class ModelImplementation implements Model {
 
     
-    public String getGretting() {
-    String saludo = "Hola mundo";
-    return saludo;
+    public String getGretting()  throws Exception {
+        
+        String saludo = "Hola mundo";
+        return saludo;
+        
     }
   
 }
