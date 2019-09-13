@@ -14,7 +14,7 @@ public class ModelFactory {
     
     public static Model getModel(){
         if(modelF == null) {
-            modelF = new FileModelImplementation();
+            modelF = new WindowModelImplementation();
         }
         return modelF;
     }
