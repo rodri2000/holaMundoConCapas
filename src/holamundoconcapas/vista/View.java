@@ -10,6 +10,11 @@ package holamundoconcapas.vista;
  * @author 2dam
  */
 public interface View {
+    /**
+     * Show a greeting
+     * @param saludo A string with contains the greeting
+     * @throws Exception 
+     */
     public void showGreeting(String saludo) throws Exception;
     
 }

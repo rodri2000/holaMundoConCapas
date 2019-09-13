@@ -7,9 +7,15 @@ package holamundoconcapas.model;
 
 /**
  *
- * @author 2dam
+ * @author Ander
  */
 public interface Model {
-    public String getGretting() throws Exception;
+    /**
+     * Get a greeting
+     * @return a String representing the greeting
+     * @throws Exception 
+     */
+    //public String getGretting() throws Exception;
+    public String getGrettingFromFile();
     
 }

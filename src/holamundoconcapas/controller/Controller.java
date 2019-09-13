@@ -17,7 +17,7 @@ public class Controller{
     
     public static void run(Model model, View view) throws Exception{
         
-        view.showGreeting(model.getGretting());
+        view.showGreeting(model.getGrettingFromFile());
         
         
     }

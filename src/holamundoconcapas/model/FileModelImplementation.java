@@ -5,19 +5,26 @@
  */
 package holamundoconcapas.model;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author 2dam
  */
-public class ModelImplementation implements Model {
 
+
+
+
+public class FileModelImplementation  implements Model{
     
-    @Override
+    private String greeting;
+    
+   @Override
     public String getGrettingFromFile() {
         
-        String saludo = "Hola mundo";
-        return saludo;
+        greeting = ResourceBundle.getBundle("holamundoconcapas.model.greeting").getString("greeting");
         
-    }
-  
+        return greeting;
+   }
+   
 }
