@@ -15,8 +15,8 @@ public class ViewFactory {
     
     public static View getView(){
         if(viewF==null){
-            viewF = new ViewImplementation();
+            viewF = new JavaFXViewImplementation();
         }
-        return viewF;
+        return new JavaFXViewImplementation();
     }
 }

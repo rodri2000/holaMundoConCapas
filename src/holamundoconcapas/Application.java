@@ -8,15 +8,20 @@ package holamundoconcapas;
 import holamundoconcapas.controller.Controller;
 import holamundoconcapas.model.Model;
 import holamundoconcapas.model.ModelFactory;
+import holamundoconcapas.vista.FXMLDocumentController;
 import holamundoconcapas.vista.View;
 import holamundoconcapas.vista.ViewFactory;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 /**
  *
  * @author 2dam
  */
 public class Application {
-    
+   
         public static void main(String [] args) throws Exception {
             Model model = ModelFactory.getModel();
             View view = ViewFactory.getView();
@@ -25,4 +30,5 @@ public class Application {
             con.run(model, view);
             
         }
+   
 }

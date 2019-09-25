@@ -5,6 +5,8 @@
  */
 package holamundoconcapas.model;
 
+import holamundoconcapas.vista.SwingViewImplementation;
+
 /**
  *
  * @author 2dam
@@ -14,7 +16,7 @@ public class ModelFactory {
     
     public static Model getModel(){
         if(modelF == null) {
-            modelF = new WindowModelImplementation();
+            modelF = new FileModelImplementation();
         }
         return modelF;
     }
